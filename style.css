@@ -1,0 +1,260 @@
+.bg{
+    background-attachment: fixed;
+	background-image: url('assets/img/background.jpg');
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+	overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  width: 80%;
+  text-align: center;
+}
+
+.button-font {	
+	font-size: 14px;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+}
+
+h2 {
+	position: relative;
+	font-family: 'Bangers', cursive;
+	font-size: 18px;
+	text-align: center;
+}
+
+div + div {
+margin-left: 10px;
+}
+
+#hi, #grad, #begin, #gds, #ftr {
+	font-size: 12px;
+}
+
+.well-size {
+height: 450px; 
+}
+
+.form-input{
+	color: black;
+}
+
+.round-blue-border {
+	position: relative;
+	left: 25%;
+	width: 150px;
+	height: 150px;
+    border-color: #007bff;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+	background-color: white;
+  }
+  
+.tablink {
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  transform: translateY(2px);
+}
+
+.gif-box {
+	height: 150px;
+	width: 150px;
+	background-color: white;
+}
+
+.slide-left {
+  margin-left:-355px;
+  animation: slidein-left 7s infinite;
+}
+
+.slide-right {
+  margin-right: 355px;
+  animation: slidein-right 7s infinite;
+}
+
+.fadein {
+	animation: fadein 7s infinite;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10px 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+#About {background-color: #0275d8;}
+#Projects {background-color: #5cb85c;}
+#Contact {background-color: #5bc0de;}
+
+@keyframes fadein {
+	0% {opacity:0;}
+    20% {opacity:0;}
+    35% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein-left {
+    0% {opacity:0;
+		margin-left:-150px; }
+    20% {
+		opacity:0;
+		margin-left:-150px; }
+    35% {opacity:0.5;	
+		margin-left:0px; }
+    100% {opacity:1; 
+		margin-left:0px; }
+}
+
+@keyframes slidein-right {
+    0% {opacity:0;
+		margin-right:-150px; }
+    20% {
+		opacity:0;
+		margin-right:-150px; }
+    35% {opacity:0.5;	
+		margin-right:0px; }
+    100% {opacity:1; 
+		margin-right:0px; }
+}
+
+.cursor{
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	transition-duration: 200ms;
+    transition-timing-function: linear;
+    animation: cursorAnim .8s infinite alternate;
+    pointer-events: none;
+ }
+ 
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 4px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: 0px;
+    left: 0px;
+    animation: cursorAnim2 .4s infinite alternate;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+}
+
+.germany {
+  background: linear-gradient(to bottom, black calc(100% / 3), #DD0000 calc(100% / 3), #DD0000 calc(100% / 3 * 2), #FFCE00 calc(100% / 3 * 2)); 
+}
+
+.poland {
+  background: linear-gradient(to bottom, white 50%, #DC143C 50%); 
+}
+ 
+ 
+@keyframes cursorAnim {
+    from {
+        transform: scale(5);
+    }
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes pulse {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #FF4136;
+  }
+}
+
+@keyframes roller {
+	40%{
+		left: 500px;
+	}
+}
+
+.size-selector{
+	height:80px;
+	width:120px;
+}
+
+.flag:hover {
+	box-shadow: 0 5px gray;
+    transform: translateY(2px);
+}
+
+@mixin flag-gbr() {
+  @include ratio(1 / 2);
+  @include union-jack();
+};
+
+.dropdown-menu {
+
+  
+  
+}
+
+.center-block {
+top:30%;
+right: 30%;
+width: 50%;
+margin: 0 auto;
+}
+
+.profile-bg{
+    background-attachment: fixed;
+	background-image: url('assets/img/sunrise.jpg');
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+	overflow: hidden;
+}
+
+.well-border {
+	border-color: white;
+    border-width: 10px;
+    border-style: solid;
+}

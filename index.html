@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Portfolio</title>
+	
+	<!-- Link -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+	
+	<!-- style.css -->
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	
+	<!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+	
+</head>
+<body>
+	<div class="bg">
+	
+		<div class="cursor"></div>
+		
+		<div class="center">
+			<div class="row">
+				<div class="col-sm-2 btn-group btn-group-vertical">
+					<div class="btn-group dropleft">
+					
+						<button class="btn btn-secondary dropdown-toggle button-font" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-globe-americas fa-3x"></i><br/>
+						<p id="btn1">Languages</p></button>
+						
+						<div class="dropdown-menu" id="langs">
+						
+							<a href="#de" class="btn btn-block size-selector flag germany" onclick="timeFunction()" data-reload></a>
+							<a href="#eng" class="btn btn-block size-selector flag" onclick="timeFunction()" style="text-align: center; border: 0px; position:relative;	" data-reload><img src="assets/img/uk.jpg" alt="English flag" style="height:80px; width:120px; margin-left:-5px;"/></a>
+							<a href="#pl" class="btn btn-block size-selector flag poland" onclick="timeFunction()" style="text-align: center; border: 0px;  position:relative;" data-reload></a>
+							
+						</div>
+						
+					</div>
+						<button class="btn btn-outline-primary button-font active tablink" type="button" onclick="openPage('About', this, 'green')" id="defaultOpen"><i class="fas fa-user fa-4x"></i></br><p id="btn2">About me</p></button>
+						
+						<button class="btn btn-outline-success button-font tablink" type="button" onclick="openPage('Projects', this, 'blue')"><i class="fas fa-tasks fa-4x"></i></br><p id="btn3">Projects</p></button>
+						
+						<button class="btn btn-outline-info button-font tablink" type="button" onclick="openPage('Contact', this, 'orange')"><i class="fas fa-info fa-4x"></i></br><p id="btn4">Contact</p></button>
+				</div>
+	
+			<div class="col-sm-3 well well-size well-border">
+				<div class="center-block profile-bg">
+					<br/>
+					<img class="img-responsive round-blue-border" src="assets/img/myphoto.jpg" alt="My photo"/>
+					<br/>
+					<h2>Adam Waniczek<h2>
+			<br/>
+			<div class="slide-left" id="title1">Junior</div>
+			<div class="fadein" id="title2">Java</div>
+			<div class="slide-right" id="title3">Developer</div>
+			<br/>
+			<br/>
+			<a href="https://github.com/adasko18"><i class="fab fa-github fa-4x"></i></a>
+			<a href="https://www.linkedin.com/in/adam-waniczek-89116297/"><i class="fab fa-linkedin fa-4x"></i></a>
+		</div>
+    </div>
+	
+	<div class="col-sm-5 well well-size">
+		<div id="About" class="tabcontent">
+			<div class="row">
+				<div class="col-sm-5" style="text-align:center;">
+				<i class="fas fa-user fa-4x"></i>
+				<h3><p id="head2">About me</p></h3>
+				<p id="hi">My name is Adam Waniczek and welcome to my profile site.</p>
+				<p id="grad">I graduated the Silesian University of Technology in the field of mechatronics and almost 3 years I work as PLC programmer.</p>
+				<p id="begin">My first programming language which I learned in my high school was Pascal.
+				During my studies I known some basics of C/C++, C# and I learned also about
+				networks, topologies and algorithms.</p>
+				<p id="gds">To inprove my projects I am trying to use good practises based on SOLID and design patterns.</p>
+				<p id="ftr">Nowadays I am looking for opportiunity to start my career in IT as junior java programmer.</p>
+				</div>
+				<div class="col-sm-5">
+				<i class="far fa-keyboard fa-4x"></i>
+				<h3 id="proglang">Programming languages</h3>
+					<div class="row">
+						<div>
+							<i class="fab fa-java fa-3x"></i>
+							<p>Java 8/11</p>
+						</div>
+						<div>
+							<i class="fab fa-js fa-3x"></i>
+							<p>JavaScript</p>
+						</div>
+						<div>
+							<i class="fab fa-cuttlefish fa-3x"></i>
+							<p>C</p>
+						</div>
+						<div class="col-sm-2">
+							<i class="fas fa-tablet-alt fa-3x"></i>
+							<p>LD/SFC/FBD/ST</p>
+						</div>
+					</div>
+				<i class="fas fa-keyboard fa-4x"></i>
+				<h3>Frameworks</h3>
+					<div class="row">
+						<div class="col-sm-3">
+							<i class="fas fa-leaf fa-3x"></i>
+							<p>Spring</p>
+						</div>
+						<div>
+							<i class="fas fa-heading fa-3x"></i>
+							<p>Hibernate</p>
+						</div>
+						<div  class="col-sm-2">
+							<i class="fas fa-keyboard fa-3x"></i>
+							<p>JUnit/ Mockito</p>
+						</div>
+						<div  class="col-sm-2">
+							<i class="fab fa-angular fa-3x"></i>
+							<p>AngularJS</p>
+						</div>
+					</div>
+				<i class="fas fa-database fa-4x"></i>
+				<h3 id="db">Databases</h3>
+					<p>MySql/SqlLite</p>
+				<i class="fas fa-palette fa-4x"></i>
+				<h3 id="webdes">Web design</h3>
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="fab fa-html5 fa-3x"></i>
+							<p>HTML5</p>
+						</div>
+						<div class="col-sm-2">
+							<i class="fab fa-css3-alt fa-3x"></i>
+							<p>CSS3</p>
+						</div>
+						<div class="col-sm-2">
+							<i class="fas fa-keyboard fa-3x"></i>
+							<p>JQuery</p>
+						</div>
+						<div class="col-sm-2">
+							<i class="fab fa-bootstrap fa-3x"></i>
+							<p>Bootstrap</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<div id="Projects" class="tabcontent" style="">
+			<i class="fas fa-tasks fa-3x"></i>
+			<h3><p id="head3">Projects</p></h3>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://github.com/adasko18/MyTetris"><img class="gif-box" src="https://camo.githubusercontent.com/aa85474d1e1ffa6cde2a02db7d554d6272311dc4/687474703a2f2f672e7265636f726469742e636f2f637068415351394479462e676966" alt="My photo"></a>
+						<p>Tetris Java Fx</p>
+					</div>
+				</div>
+		</div>
+
+		<div id="Contact" class="tabcontent">
+			<i class="fas fa-info fa-3x"></i>
+			<h3><p id="head4">Contact</p></h3>
+				<form method="post" name="formular" action="form-to-email.php">
+					<p>
+						<label for='name' id="f1">Enter Name: </label><br/>
+						<input class="form-input" type="text" name="name" placeholder="Name" autofocus>
+					</p>
+					<p>
+						<label for='email' id="f2">Enter Email Address: </label><br/>
+						<input class="form-input" type="email" name="email" placeholder="Email">
+						<h3 id="error"></h3>
+					</p>
+					<p>
+						<label for='message' id="f3">Enter Text: </label><br/>
+						<textarea rows="4" cols="50" class="form-input" type="text" name="textarea" placeholder="Text..."></textarea>
+					</p>
+					<p>
+						<input class="form-input" type="submit" value="Send" id="send"></input>
+					</p>
+				</form>
+		</div>
+    </div>
+  </div>
+ </div>
+</div>
+<script>
+	function regex(email) {
+		const reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return reg.test(email);
+	}
+	
+	function validation() {
+		const $error = $("#result");
+		const email = $("#email").val();
+		$error.text("");
+		
+		if(!regex(email)) {
+		$error.text(email + " is valid!");
+		$error.css("color","red");
+		}
+		return false;
+	}
+	
+	$("$error").on("click", validate);
+</script>
+<script src="assets/js/button.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/languages.js"></script>
+<script src="assets/js/tablink.js"></script>
+</body>
+</html>
