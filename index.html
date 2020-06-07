@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="pl">
+
+<!--HEAD-->
 <head>
 
 	<meta charset="utf-8" />
@@ -25,14 +27,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 	
 </head>
+
+<!--BODY-->
 <body>
-	<div class="bg">
-	
-		<div class="cursor"></div>
+<div class="cursor"></div>
+	<div class="wrap">
 		
-		<div class="center">
+		<div class="center container-fluid">
 			<div class="row">
-				<div class="col-sm-2 btn-group btn-group-vertical">
+				<div class="col-xs-2 col-lg-2 btn-group btn-group-vertical">
 					<div class="btn-group dropleft">
 					
 						<button class="btn btn-secondary dropdown-toggle button-font" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,7 +58,7 @@
 						<button class="btn btn-outline-info button-font tablink" type="button" onclick="openPage('Contact', this, 'orange')"><i class="fas fa-info fa-4x"></i></br><p id="btn4">Contact</p></button>
 				</div>
 	
-			<div class="col-sm-3 well well-size well-border">
+			<div class="col-xs-3 col-lg-3 well well-size well-border">
 				<div class="center-block profile-bg">
 					<br/>
 					<img class="img-responsive round-blue-border" src="assets/img/myphoto.jpg" alt="My photo"/>
@@ -72,10 +75,10 @@
 		</div>
     </div>
 	
-	<div class="col-sm-5 well well-size">
+	<div class="col-xs-5 col-lg-5 well well-size">
 		<div id="About" class="tabcontent">
 			<div class="row">
-				<div class="col-sm-5" style="text-align:center;">
+				<div class="col-xs-5 col-lg-5" style="text-align:center;">
 				<i class="fas fa-user fa-4x"></i>
 				<h3><p id="head2">About me</p></h3>
 				<p id="hi">My name is Adam Waniczek and welcome to my profile site.</p>
@@ -86,69 +89,75 @@
 				<p id="gds">To inprove my projects I am trying to use good practises based on SOLID and design patterns.</p>
 				<p id="ftr">Nowadays I am looking for opportiunity to start my career in IT as junior java programmer.</p>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-xs-5 col-lg-5">
 				<i class="far fa-keyboard fa-4x"></i>
 				<h3 id="proglang">Programming languages</h3>
+				<div class="container-fluid">
 					<div class="row">
-						<div>
-							<i class="fab fa-java fa-3x"></i>
+						<div class="col-xs-2 col-lg-2 col-size">
+							<i class="fab fa-java fa-2x"></i>
 							<p>Java 8/11</p>
 						</div>
-						<div>
-							<i class="fab fa-js fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fab fa-js fa-2x"></i>
 							<p>JavaScript</p>
 						</div>
-						<div>
-							<i class="fab fa-cuttlefish fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fab fa-cuttlefish fa-2x"></i>
 							<p>C</p>
 						</div>
-						<div class="col-sm-2">
-							<i class="fas fa-tablet-alt fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fas fa-tablet-alt fa-2x"></i>
 							<p>LD/SFC/FBD/ST</p>
 						</div>
 					</div>
+				</div>
 				<i class="fas fa-keyboard fa-4x"></i>
 				<h3>Frameworks</h3>
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-3">
-							<i class="fas fa-leaf fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fas fa-leaf fa-2x"></i>
 							<p>Spring</p>
 						</div>
-						<div>
-							<i class="fas fa-heading fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fas fa-heading fa-2x"></i>
 							<p>Hibernate</p>
 						</div>
-						<div  class="col-sm-2">
-							<i class="fas fa-keyboard fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fas fa-keyboard fa-2x"></i>
 							<p>JUnit/ Mockito</p>
 						</div>
-						<div  class="col-sm-2">
-							<i class="fab fa-angular fa-3x"></i>
+						<div class="col-xs-2 col-lg-2">
+							<i class="fab fa-angular fa-2x"></i>
 							<p>AngularJS</p>
 						</div>
+					</div>
 					</div>
 				<i class="fas fa-database fa-4x"></i>
 				<h3 id="db">Databases</h3>
 					<p>MySql/SqlLite</p>
 				<i class="fas fa-palette fa-4x"></i>
 				<h3 id="webdes">Web design</h3>
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-2">
+						<div class="col-xs-2 col-lg-2">
 							<i class="fab fa-html5 fa-3x"></i>
 							<p>HTML5</p>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2 col-lg-2">
 							<i class="fab fa-css3-alt fa-3x"></i>
 							<p>CSS3</p>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2 col-lg-2">
 							<i class="fas fa-keyboard fa-3x"></i>
 							<p>JQuery</p>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2 col-lg-2">
 							<i class="fab fa-bootstrap fa-3x"></i>
 							<p>Bootstrap</p>
 						</div>
+					</div>
 					</div>
 				</div>	
 			</div>
@@ -158,7 +167,7 @@
 			<i class="fas fa-tasks fa-3x"></i>
 			<h3><p id="head3">Projects</p></h3>
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-xs-3 col-lg-3">
 						<a href="https://github.com/adasko18/MyTetris"><img class="gif-box" src="https://camo.githubusercontent.com/aa85474d1e1ffa6cde2a02db7d554d6272311dc4/687474703a2f2f672e7265636f726469742e636f2f637068415351394479462e676966" alt="My photo"></a>
 						<p>Tetris Java Fx</p>
 					</div>
@@ -191,29 +200,11 @@
   </div>
  </div>
 </div>
-<script>
-	function regex(email) {
-		const reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		return reg.test(email);
-	}
-	
-	function validation() {
-		const $error = $("#result");
-		const email = $("#email").val();
-		$error.text("");
-		
-		if(!regex(email)) {
-		$error.text(email + " is valid!");
-		$error.css("color","red");
-		}
-		return false;
-	}
-	
-	$("$error").on("click", validate);
-</script>
+</div>
 <script src="assets/js/button.js"></script>
 <script src="assets/js/cursor.js"></script>
 <script src="assets/js/languages.js"></script>
 <script src="assets/js/tablink.js"></script>
+<script src="assets/js/validateEmail.js"></script>
 </body>
 </html>

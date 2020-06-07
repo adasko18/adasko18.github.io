@@ -1,17 +1,23 @@
-.bg{
-    background-attachment: fixed;
+html {
+    font-size: 62.5%;
 	background-image: url('assets/img/background.jpg');
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-	overflow: hidden;
 }
 
-.center {
+h2 {
+	font-family: 'Bangers', cursive;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.col-size {
+	margin: 0 auto;
+}
+
+div + div {
+margin-left: 1rem;
+}
+
+div.center {
   position: absolute;
   left: 15%;
   top: 25%;
@@ -19,29 +25,21 @@
   text-align: center;
 }
 
+.wrap {
+	margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    max-width: 145rem; 
+}
+
 .button-font {	
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: 'Bangers', cursive;
 	text-align: center;
-}
-
-h2 {
-	position: relative;
-	font-family: 'Bangers', cursive;
-	font-size: 18px;
-	text-align: center;
-}
-
-div + div {
-margin-left: 10px;
-}
-
-#hi, #grad, #begin, #gds, #ftr {
-	font-size: 12px;
 }
 
 .well-size {
-height: 450px; 
+height: 45rem; 
 }
 
 .form-input{
@@ -50,11 +48,11 @@ height: 450px;
 
 .round-blue-border {
 	position: relative;
-	left: 25%;
-	width: 150px;
-	height: 150px;
+	margin: 0 auto;
+	width: 15rem;
+	height: 15rem;
     border-color: #007bff;
-    border-width: 10px;
+    border-width: 1rem;
     border-style: solid;
     border-radius: 50%;
 	background-color: white;
@@ -66,28 +64,28 @@ height: 450px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 1.4rem 1.6rem;
+  font-size: 1.7rem;
   width: 25%;
 }
 
 .tablink:hover {
-  transform: translateY(2px);
+  transform: translateY(0.2rem);
 }
 
 .gif-box {
-	height: 150px;
-	width: 150px;
+	height: 15rem;
+	width: 15rem;
 	background-color: white;
 }
 
 .slide-left {
-  margin-left:-355px;
+  margin-left:-35.5rem;
   animation: slidein-left 7s infinite;
 }
 
 .slide-right {
-  margin-right: 355px;
+  margin-right: 35.5rem;
   animation: slidein-right 7s infinite;
 }
 
@@ -98,49 +96,14 @@ height: 450px;
 .tabcontent {
   color: white;
   display: none;
-  padding: 10px 10px;
+  padding: 1rem 1rem;
   height: 100%;
   overflow: auto;
 }
 
-#About {background-color: #0275d8;}
-#Projects {background-color: #5cb85c;}
-#Contact {background-color: #5bc0de;}
-
-@keyframes fadein {
-	0% {opacity:0;}
-    20% {opacity:0;}
-    35% {opacity:0.5;}
-    100% {opacity:1;}
-}
-
-@keyframes slidein-left {
-    0% {opacity:0;
-		margin-left:-150px; }
-    20% {
-		opacity:0;
-		margin-left:-150px; }
-    35% {opacity:0.5;	
-		margin-left:0px; }
-    100% {opacity:1; 
-		margin-left:0px; }
-}
-
-@keyframes slidein-right {
-    0% {opacity:0;
-		margin-right:-150px; }
-    20% {
-		opacity:0;
-		margin-right:-150px; }
-    35% {opacity:0.5;	
-		margin-right:0px; }
-    100% {opacity:1; 
-		margin-right:0px; }
-}
-
 .cursor{
-	width: 20px;
-	height: 20px;
+	width: 2rem;
+	height: 2rem;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
@@ -152,22 +115,22 @@ height: 450px;
  
 .cursor::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
-    border: 4px solid gray;
+    border: 0.4rem solid gray;
     border-radius: 50%;
     opacity: .5;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     animation: cursorAnim2 .4s infinite alternate;
 }
 
 .flag {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   overflow: hidden;
-  border: 1px solid #efefef;
+  border: 0.1rem solid #efefef;
 }
 
 .germany {
@@ -178,59 +141,14 @@ height: 450px;
   background: linear-gradient(to bottom, white 50%, #DC143C 50%); 
 }
  
- 
-@keyframes cursorAnim {
-    from {
-        transform: scale(5);
-    }
-    to {
-        transform: scale(.8);
-    }
-}
-
-@keyframes cursorAnim2 {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(.4);
-    }
-}
-
-@keyframes pulse {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: #FF4136;
-  }
-}
-
-@keyframes roller {
-	40%{
-		left: 500px;
-	}
-}
-
 .size-selector{
-	height:80px;
-	width:120px;
+	height:8rem;
+	width:12rem;
 }
 
 .flag:hover {
-	box-shadow: 0 5px gray;
-    transform: translateY(2px);
-}
-
-@mixin flag-gbr() {
-  @include ratio(1 / 2);
-  @include union-jack();
-};
-
-.dropdown-menu {
-
-  
-  
+	box-shadow: 0 0.5rem gray;
+    transform: translateY(0.2rem);
 }
 
 .center-block {
@@ -255,6 +173,69 @@ margin: 0 auto;
 
 .well-border {
 	border-color: white;
-    border-width: 10px;
+    border-width: 1rem;
     border-style: solid;
+}
+
+#hi, #grad, #begin, #gds, #ftr {
+	font-size: 1.2rem;
+}
+
+#About {
+	background-color: #0275d8;
+	}
+#Projects {
+	background-color: #5cb85c;
+	}
+#Contact {
+	background-color: #5bc0de;
+	}
+	
+	@keyframes cursorAnim {
+    from {
+        transform: scale(5);
+    }
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes fadein {
+	0% {opacity:0;}
+    20% {opacity:0;}
+    35% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein-left {
+    0% {opacity:0;
+		margin-left:-15rem; }
+    20% {
+		opacity:0;
+		margin-left:-15rem; }
+    35% {opacity:0.5;	
+		margin-left:0rem; }
+    100% {opacity:1; 
+		margin-left:0rem; }
+}
+
+@keyframes slidein-right {
+    0% {opacity:0;
+		margin-right:-15rem; }
+    20% {
+		opacity:0;
+		margin-right:-15rem; }
+    35% {opacity:0.5;	
+		margin-right:0rem; }
+    100% {opacity:1; 
+		margin-right:0rem; }
 }
