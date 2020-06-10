@@ -20,9 +20,11 @@
 	
 	<!-- style.css -->
 	<link rel="stylesheet" href="style.css" type="text/css"/>
+
 	
 	<!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 	
@@ -33,7 +35,7 @@
 <div class="cursor"></div>
 	<div class="wrap">
 		
-		<div class="center container-fluid">
+		<div id="top" class="center container-fluid">
 			<div class="row">
 				<div class="col-xs-2 col-lg-2 btn-group btn-group-vertical">
 					<div class="btn-group dropleft">
@@ -51,11 +53,11 @@
 						</div>
 						
 					</div>
-						<button class="btn btn-outline-primary button-font active tablink" type="button" onclick="openPage('About', this, 'green')" id="defaultOpen"><i class="fas fa-user fa-4x"></i></br><p id="btn2">About me</p></button>
+						<button class="btn btn-outline-primary scrollbutton button-font active tablink" type="button" onclick="openPage('About', this, 'green')" id="defaultOpen" ><i class="fas fa-user fa-3x"></i></br><p id="btn2">About me</p></button>
 						
-						<button class="btn btn-outline-success button-font tablink" type="button" onclick="openPage('Projects', this, 'blue')"><i class="fas fa-tasks fa-4x"></i></br><p id="btn3">Projects</p></button>
+						<button class="btn btn-outline-success scrollbutton button-font tablink" type="button" onclick="openPage('Projects', this, 'blue')" id="scrollToProject"><i class="fas fa-tasks fa-3x"></i></br><p id="btn3">Projects</p></button>
 						
-						<button class="btn btn-outline-info button-font tablink" type="button" onclick="openPage('Contact', this, 'orange')"><i class="fas fa-info fa-4x"></i></br><p id="btn4">Contact</p></button>
+						<button class="btn btn-outline-info scrollbutton button-font tablink" type="button" onclick="openPage('Contact', this, 'orange')" id="scrollToContact" ><i class="fas fa-info fa-3x"></i></br><p id="btn4">Contact</p></button>
 				</div>
 	
 			<div class="col-xs-3 col-lg-3 well well-size well-border">
@@ -80,7 +82,7 @@
 			<div class="row">
 				<div class="col-xs-5 col-lg-5" style="text-align:center;">
 				<i class="fas fa-user fa-4x"></i>
-				<h3><p id="head2">About me</p></h3>
+				<h3><p id="head2" class="container-fluid">About me</p></h3>
 				<p id="hi">My name is Adam Waniczek and welcome to my profile site.</p>
 				<p id="grad">I graduated the Silesian University of Technology in the field of mechatronics and almost 3 years I work as PLC programmer.</p>
 				<p id="begin">My first programming language which I learned in my high school was Pascal.
@@ -94,7 +96,7 @@
 				<h3 id="proglang">Programming languages</h3>
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-2 col-lg-2 col-size">
+						<div class="col-xs-2 col-lg-2">
 							<i class="fab fa-java fa-2x"></i>
 							<p>Java 8/11</p>
 						</div>
@@ -165,7 +167,7 @@
 		
 		<div id="Projects" class="tabcontent" style="">
 			<i class="fas fa-tasks fa-3x"></i>
-			<h3><p id="head3">Projects</p></h3>
+			<h3><p id="head3" class="container-fluid">Projects</p></h3>
 				<div class="row">
 					<div class="col-xs-3 col-lg-3">
 						<a href="https://github.com/adasko18/MyTetris"><img class="gif-box" src="https://camo.githubusercontent.com/aa85474d1e1ffa6cde2a02db7d554d6272311dc4/687474703a2f2f672e7265636f726469742e636f2f637068415351394479462e676966" alt="My photo"></a>
@@ -176,7 +178,7 @@
 
 		<div id="Contact" class="tabcontent">
 			<i class="fas fa-info fa-3x"></i>
-			<h3><p id="head4">Contact</p></h3>
+			<h3><p id="head4" class="container-fluid">Contact</p></h3>
 				<form method="post" name="formular" action="form-to-email.php">
 					<p>
 						<label for='name' id="f1">Enter Name: </label><br/>
@@ -197,6 +199,7 @@
 				</form>
 		</div>
     </div>
+	<a id="to-top" class="scroll-to-top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
   </div>
  </div>
 </div>
@@ -206,5 +209,41 @@
 <script src="assets/js/languages.js"></script>
 <script src="assets/js/tablink.js"></script>
 <script src="assets/js/validateEmail.js"></script>
+
+<script type="text/javascript">
+$(function () {
+		$("#to-top").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#top").offset().top
+                }, 2000);
+				return false;
+		});
+	});
+$(function () {
+		$("#defaultOpen").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#About").offset().top
+                }, 2000);
+				return false;
+		});
+	});
+	$(function () {
+		$("#scrollToProject").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#Projects").offset().top
+                }, 2000);
+				return false;
+		});
+	});
+	$(function () {
+		$("#scrollToContact").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#Contact").offset().top
+                }, 2000);
+				return false;
+		});
+	});
+</script>
+
 </body>
 </html>
