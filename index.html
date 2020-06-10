@@ -179,22 +179,22 @@
 		<div id="Contact" class="tabcontent">
 			<i class="fas fa-info fa-3x"></i>
 			<h3><p id="head4" class="container-fluid">Contact</p></h3>
-				<form method="post" name="formular" action="form-to-email.php">
+				<form method="post" name="formular" action="http://formspree.io/you@email.com">
 					<p>
 						<label for='name' id="f1">Enter Name: </label><br/>
 						<input class="form-input" type="text" name="name" placeholder="Name" autofocus>
 					</p>
 					<p>
 						<label for='email' id="f2">Enter Email Address: </label><br/>
-						<input class="form-input" type="email" name="email" placeholder="Email">
+						<input class="form-input" type="email" name="_replyto" placeholder="Email">
 						<h3 id="error"></h3>
 					</p>
 					<p>
 						<label for='message' id="f3">Enter Text: </label><br/>
-						<textarea rows="4" cols="50" class="form-input" type="text" name="textarea" placeholder="Text..."></textarea>
+						<textarea rows="4" cols="50" class="form-input" type="text" name="body" placeholder="Text..."></textarea>
 					</p>
 					<p>
-						<input class="form-input" type="submit" name="submit" value="Submit" id="send"></input>
+						<input class="form-input" type="submit" name="submit" value="Send" id="send"></input>
 					</p>
 				</form>
 		</div>
