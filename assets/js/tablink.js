@@ -11,5 +11,4 @@ function openPage(pageName,elmnt,color) {
   document.getElementById(pageName).style.display = "block";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
