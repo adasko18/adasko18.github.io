@@ -18,10 +18,13 @@
 				form2: "Enter Email Address: ",
 				form3: "Enter Text: ",
 				welcome: "My name is Adam Waniczek and welcome to my profile site.",
-				graduate: "I graduated the Silesian University of Technology in the field of mechatronics and almost 3 years I work as PLC programmer.",
-				bgn: "My first programming language which I learned in my high school was Pascal. During my studies I known some basics of C/C++, C# and I learned also about networks, topologies and algorithms.",
-				goods: "To inprove my projects I am trying to use good practises based on SOLID and design patterns.",
-				future: "Nowadays I am looking for opportiunity to start my career in IT as junior java programmer.",
+				graduate: "I graduated from the Silesian University of Technology in the field of mechatronics and almost 3 years I work as a PLC programmer.I speak in Polish, English and German.",
+				hash1: "whyJAVA?",
+				bgn: "The answer is simple - Java was the first language I started learning myself. My first programming language which I learned in my high school was Pascal. During my studies, I learned the basics of such languages like C, C++, and C# and I learned also about networks, topologies, and algorithms.   But Java interested me the most because of the bootability on any JVM containing hardware and numbers of useful libraries.",
+				hash2: "myProjects",
+				goods: "To improve my object-oriented programming projects I am trying to use good practices based on SOLID rules and design patterns.",
+				hash3: "devProgrammingPath",
+				future: "Nowadays I am looking for an opportunity to start my career in IT as a junior java programmer. I would like to develop toward REST web services and also Angular SPA.",
 				s: "Send"
 			},
 			de: {
@@ -39,10 +42,13 @@
 				form2: "Email Address eingeben: ",
 				form3: "Text eingeben: ",
 				welcome: "Mein name ist Adam Waniczek und willkommen auf meine Profilseite.",
-				graduate: "Ich habe die Schlesische Technische Universität im Bereich Mechatronik abgeschlossen und ca. 3 Jahre arbeite ich als SPS Programmierer.",
-				bgn: "My first programming language which I learned in my high school was Pascal. During my studies I known some basics of C/C++, C# and I learned also about networks, topologies and algorithms.",
-				goods: "To inprove my projects I am trying to use good practises based on SOLID and design patterns.",
-				future: "Nowadays I am looking for opportiunity to start my career in IT as junior java programmer.",
+				graduate: "Ich habe die Schlesische Technische Universität im Bereich Mechatronik abgeschlossen und ca. 3 Jahre arbeite ich als SPS Programmierer. Ich spreche auf Polish, English und Deutsch.",
+				hash1: "warumJAVA?",
+				bgn: "Die Antwort ist einfach - Java war die erste Sprache, die ich selbst gelernt habe. Meine erste Programmiersprache, die ich in meiner Mittelschule gelernt habe, war Pascal. Während meines Studiums habe ich die Grundlagen solcher Sprachen wie C, C++ und C# und auch Netzwerke, Topologien und Algorithmen gelernt. Aber Java hat mich am meisten interessiert, weil es auf jeder bootfähig Hardware mit JVM ist und eine nützlicher Bibliotheken enthält.",
+				hash2: "meineProjekte",
+				goods: "Um meine objektorientierten Programmierprojekte zu verbessern, versuche ich, bewährte Verfahren zu verwenden, die auf SOLID-Regeln und Entwurfsmustern basieren.",
+				hash3: "Entw.programmierpfad",
+				future: "Jetzt suche ich nach einer Möglichkeit, meine Karriere in der IT als Junior Java Programmer zu anfangen. Ich möchte mich zu REST-Webdiensten und auch zu Angular SPA entwickeln.",
 				s: "Schick"
 			},
 			pl: {
@@ -60,10 +66,13 @@
 				form2: "Podaj adres email: : ",
 				form3: "Wprowadź tekst: ",
 				welcome: "Nazywam się Adam Waniczek i witam na mojej stronie profilowej.",
-				graduate: "Ukończyłem Politechnikę Śląśką w kierunku mechatronika i od prawie trzech lat pracuje jako programista PLC.",
-				bgn: "Pierwszymy językiem programowania który poznałem w szkole średniej był Pascal. Podczas studiów poznałem podstawy języka C, C++ oraz C#. Ponadto posiadam podstawową wiedzę na temat sieci, topologi czy też algorytmów.",
-				goods: "W celu rozwoju moich projektów staram się stosować dobre praktyki programowania bazujące na zasadach SOLID oraz wzorcach projektowych.",
-				future: "Obecnie szukam możliwości rozpoczęcia pracy w branży IT jako młodszy programista Java.",
+				graduate: "Ukończyłem Politechnikę Śląśką w kierunku mechatronika i od prawie trzech lat pracuje jako programista PLC. Posługuje się językiem polskim, angielskim i niemieckim.",
+				hash1: "dlaczegoJava?",
+				bgn: "Odpowiedź jest prosta - Java była pierwszym językiem którego zacząłem samodzielnie się uczyć. Pierwszym językiem programowania, którego poznałem był Pascal. Podczas studiów poznałem podstawy takich języków jak C, C++ oraz C#, ale też uczyłem się o sieci, topologiach, czy algorytmach. Ale Java interesowała mnie najbardziej ze względu na uruchamialność na każdym sprzęcie posiadającym JVM i ze względu na użyteczne biblioteki.",
+				hash2: "mojeProjekty",
+				goods: "W celu rozwoju moich zorientowanych obiektowo projektów staram się stosować dobre praktyki programowania bazujące na zasadach SOLID oraz wzorcach projektowych.",
+				hash3: "ścieżkaRozwoju",
+				future: "Obecnie szukam możliwości rozpoczęcia pracy w branży IT jako młodszy programista Java. Chciałbym również się rozwijać w kierunku RESTowych serwisów webowych i Angular SPA.",
 				s: "Wyślij"
 			}
 		};

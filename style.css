@@ -30,6 +30,11 @@ div.center {
   text-align: center;
 }
 
+div.box-size {
+	height: 50px;
+	width: 50px;
+}
+
 .wrap {
 	margin-left: auto;
     margin-right: auto;
