@@ -1,4 +1,11 @@
 $(function () {
+	$("#to-top").hide();
+	var arrowUp = $("p").last();
+	var offset = arrowUp.offset();
+		$( window ).resize(function() {
+		$("#to-top").fadeIn();
+		location.reload(true);
+		});
 		$("#to-top").click(function () {
 			$('html, body').animate({
 				scrollTop: $("#top").offset().top

@@ -201,6 +201,17 @@ margin: 0 auto;
 	background-color: #5bc0de;
 	}
 	
+#to-top {
+	left: 50px;
+    top: 2000px;
+	color: white;
+}
+	
+#to-top:hover {
+	color: #0275d8;
+	transform: translateY(0.2rem);
+}
+	
 	@keyframes cursorAnim {
     from {
         transform: scale(5);

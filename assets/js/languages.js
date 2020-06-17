@@ -1,7 +1,5 @@
-//define language reload anchors
 		var dataReload = document.querySelectorAll("[data-reload]");
 	
-		//language translation
 		var language = {
 			eng: {
 				button1: "Language",
@@ -77,7 +75,6 @@
 			}
 		};
 		
-		//Define language via hash
 		if (window.location.hash) {
 			if(window.location.hash === "#pl") {
 				btn1.textContent = language.pl.button1;
@@ -105,7 +102,6 @@
 			}
 		}
 		
-		//Define language via hash
 		if (window.location.hash) {
 			if(window.location.hash === "#de") {
 				btn1.textContent = language.de.button1;
@@ -133,7 +129,6 @@
 			}
 		}
 		
-		//define language reload onclick illiteration
 		for(i=0;i<=dataReload.lenght; i++) {
 			dataReload[i].onclick = function() {
 				location.reload(true);
