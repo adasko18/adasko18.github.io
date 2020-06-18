@@ -24,7 +24,8 @@ margin-left: 1rem;
 
 div.center {
   position: absolute;
-  left: 15%;
+  left: 10%;
+  right: 10%;
   top: 25%;
   width: 80%;
   text-align: center;
